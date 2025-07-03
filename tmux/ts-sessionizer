@@ -6,7 +6,7 @@ else
     # selected=$(find /home ~/work ~/projects ~/ ~/usc ~/.config -mindepth 1 -maxdepth 1 -type d | fzf)
     # Find commands and escape spaces in results
     # Remove /.git and /.ts-anchor from find results
-    main_dirs=$(find /home ~/ ~/usc ~/.config -mindepth 1 -maxdepth 1 -type d | sed 's/ /\\ /g')
+    main_dirs=$(find /home ~/ ~/usc ~/github-runners ~/.config -mindepth 1 -maxdepth 1 -type d | sed 's/ /\\ /g')
     git_dirs=$(find ~/usc ~/projects ~/work \( \( -type d -name ".git" \) -or \( -type f -name ".ts-anchor" \) \) | sed 's/ /\\ /g; s/\/\.git$//g; s/\/\.ts-anchor$//g')
 
     # Concat both lists of directories
