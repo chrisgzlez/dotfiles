@@ -7,8 +7,8 @@ mkdir -vp ~/.local/bin
 # Setup tmux
 #
 # TODO: Install tpm, execute tpm update, etc.
-ln -s ./tmux/.tmux.conf ~/.tmux.conf
-ln -s ./tmux/ts-sessionizer ~/.local/bin/ts-sessionizer
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/tmux/ts-sessionizer ~/.local/bin/ts-sessionizer
 
 
 
